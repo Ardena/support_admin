@@ -1,0 +1,19 @@
+<div class="panel panel-default">
+  <div class="panel-heading">Canvas Users</div>
+  <div class="panel-body">
+    <table class="table">
+      <tr>
+        <% @headers.each do |header| %>
+        <th><%= header %></th>
+        <% end %>
+      </tr>
+      <% @models.each do |m| %>
+      <tr>
+        <% m.attributes.each do |k,v| %>
+        <td><%= v %></td>
+        <% end %>
+      </tr>
+      <% end %>
+    </table>
+  </div>
+</div>
