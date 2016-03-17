@@ -18,6 +18,6 @@ Gem::Specification.new do |s|
 
   #s.add_dependency "rails", "~> 3.2.17"
 
-  s.add_development_dependency "sqlite3"
   s.add_dependency "rubycas-client"
+  s.add_dependency "kaminari"
 end

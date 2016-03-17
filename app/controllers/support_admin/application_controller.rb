@@ -1,5 +1,6 @@
 require 'casclient'
 require 'casclient/frameworks/rails/filter'
+require 'kaminari'
 
 module SupportAdmin
   class ApplicationController < ActionController::Base

@@ -1,3 +1,4 @@
 = SupportAdmin
 
-This project rocks and uses MIT-LICENSE.
+This project is a Rails engine that can be added to a project to give some customizable admin
+functions to an existing project.
