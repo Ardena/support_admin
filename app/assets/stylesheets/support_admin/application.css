@@ -13,3 +13,26 @@
  *= require_tree .
  *= require_self
  */
+#pagination {
+  text-align: center;
+}
+
+.sidebar-nav li .btn-link {
+  display: block;
+  text-decoration: none;
+  color: #999999;
+  width: 100%;
+  text-align: left;
+  text-indent: 13px;
+}
+
+.sidebar-nav li .btn-link:hover {
+  text-decoration: none;
+  color: #fff;
+  background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li .btn-link:active,
+.sidebar-nav li .btn-link:focus {
+  text-decoration: none;
+}

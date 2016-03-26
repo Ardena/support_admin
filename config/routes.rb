@@ -1,5 +1,5 @@
 SupportAdmin::Engine.routes.draw do
-  root to: 'application#default_class'
+  root to: 'application#default'
   post 'logout' => 'application#logout'
 
   scope ':model_name' do

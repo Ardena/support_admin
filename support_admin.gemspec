@@ -16,8 +16,10 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["spec/**/*"]
 
-  #s.add_dependency "rails", "~> 3.2.17"
+  s.add_dependency "rails"
 
-  s.add_dependency "rubycas-client"
-  s.add_dependency "kaminari"
+  s.add_dependency "rubycas-client", "~> 2.3.9"
+  s.add_dependency "kaminari", "~> 0.16.3"
+  s.add_dependency "github-markup"
+  s.add_dependency "rdoc"
 end

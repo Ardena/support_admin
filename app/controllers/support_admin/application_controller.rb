@@ -1,6 +1,7 @@
 require 'casclient'
 require 'casclient/frameworks/rails/filter'
 require 'kaminari'
+require 'github/markup'
 
 module SupportAdmin
   class ApplicationController < ActionController::Base
@@ -12,7 +13,8 @@ module SupportAdmin
       @settings = SupportAdmin::Setting.order(:display_name)
     end
 
-    def default_class
+    def default
+      @html = GitHub::Markup.render("README.rdoc", File.read("#{Rails.root}/README.rdoc")).html_safe
       render 'default'
     end
 
